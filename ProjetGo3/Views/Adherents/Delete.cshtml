@@ -1,0 +1,80 @@
+﻿@model ProjetGo3.Models.Adherent
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Adherent</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nomAdherent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nomAdherent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.prenomAdherent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.prenomAdherent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.emailAdherent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emailAdherent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telephoneAdherent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telephoneAdherent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.adresseAdherent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.adresseAdherent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateAdhesionAdherent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateAdhesionAdherent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.statutAdhesionAdherent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.statutAdhesionAdherent)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

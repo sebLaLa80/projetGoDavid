@@ -1,0 +1,162 @@
+﻿@model ProjetGo3.Models.Projet
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Projet</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.titreProjet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.titreProjet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descriptionProjet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descriptionProjet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sommaireProjet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sommaireProjet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.statutProjet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.statutProjet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateDebutEstimeeProjet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateDebutEstimeeProjet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateFinEstimeeProjet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateFinEstimeeProjet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.echeancierProjet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.echeancierProjet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.budgetProjet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.budgetProjet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totalFondsCollectesProjet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totalFondsCollectesProjet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totalDepensesProjet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totalDepensesProjet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateDebutRelleProjet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateDebutRelleProjet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateFinRelleProjet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateFinRelleProjet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.realisationCompleteesProjet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.realisationCompleteesProjet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.risquesProjet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.risquesProjet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.etatAvancementProjet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.etatAvancementProjet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.codeAdherentProposeProjet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.codeAdherentProposeProjet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.codeAdherentCoopteProjet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.codeAdherentCoopteProjet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Equipe.codeAdherent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Equipe.codeAdherent)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.codeProjet }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

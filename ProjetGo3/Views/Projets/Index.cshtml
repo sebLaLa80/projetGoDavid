@@ -1,0 +1,135 @@
+﻿@model IEnumerable<ProjetGo3.Models.Projet>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.titreProjet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descriptionProjet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sommaireProjet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.statutProjet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dateDebutEstimeeProjet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dateFinEstimeeProjet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.echeancierProjet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.budgetProjet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.totalFondsCollectesProjet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.totalDepensesProjet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dateDebutRelleProjet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dateFinRelleProjet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.realisationCompleteesProjet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.risquesProjet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.etatAvancementProjet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.codeAdherentProposeProjet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.codeAdherentCoopteProjet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Equipe.codeAdherent)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.titreProjet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.descriptionProjet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sommaireProjet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.statutProjet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dateDebutEstimeeProjet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dateFinEstimeeProjet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.echeancierProjet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.budgetProjet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.totalFondsCollectesProjet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.totalDepensesProjet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dateDebutRelleProjet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dateFinRelleProjet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.realisationCompleteesProjet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.risquesProjet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.etatAvancementProjet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.codeAdherentProposeProjet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.codeAdherentCoopteProjet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Equipe.codeAdherent)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.codeProjet }) |
+            @Html.ActionLink("Details", "Details", new { id=item.codeProjet }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.codeProjet })
+        </td>
+    </tr>
+}
+
+</table>

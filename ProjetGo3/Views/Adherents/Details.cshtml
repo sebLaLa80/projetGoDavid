@@ -1,0 +1,74 @@
+﻿@model ProjetGo3.Models.Adherent
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Adherent</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nomAdherent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nomAdherent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.prenomAdherent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.prenomAdherent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.emailAdherent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emailAdherent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telephoneAdherent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telephoneAdherent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.adresseAdherent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.adresseAdherent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateAdhesionAdherent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateAdhesionAdherent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.statutAdhesionAdherent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.statutAdhesionAdherent)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.codeAdherent }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

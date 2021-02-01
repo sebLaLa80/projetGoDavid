@@ -1,0 +1,69 @@
+﻿@model IEnumerable<ProjetGo3.Models.Adherent>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nomAdherent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.prenomAdherent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emailAdherent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.telephoneAdherent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.adresseAdherent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dateAdhesionAdherent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.statutAdhesionAdherent)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nomAdherent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.prenomAdherent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emailAdherent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.telephoneAdherent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.adresseAdherent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dateAdhesionAdherent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.statutAdhesionAdherent)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.codeAdherent }) |
+            @Html.ActionLink("Details", "Details", new { id=item.codeAdherent }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.codeAdherent })
+        </td>
+    </tr>
+}
+
+</table>
